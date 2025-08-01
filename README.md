@@ -4,7 +4,7 @@ Dashboard interaktif yang dibangun dengan React dan FastAPI untuk menganalisis d
 
 ## 🚀 Tampilan Dashboard
 
-![Tampilan Dashboard](URL_SCREENSHOT_DASHBOARD_MU_DI_SINI)
+![Tampilan Dashboard](<img width="1920" height="1383" alt="Image" src="https://github.com/user-attachments/assets/669df58a-13af-455d-9fca-6c0f7e762f73" />)
 
 ## ✨ Fitur Utama
 
