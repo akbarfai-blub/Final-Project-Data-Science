@@ -1,0 +1,145 @@
+/* frontend/src/App.css */
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+}
+.App-header {
+  padding: 20px;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.widget {
+  background-color: #3a3f4a;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+}
+
+/* Styling untuk judul di dalam setiap widget */
+.widget h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #eee;
+  text-align: left; /* Rata kiri untuk judul */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  border-bottom: 2px solid #3a3f4a;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-button:hover {
+  color: white;
+}
+
+.nav-button.active {
+  color: #61dafb;
+}
+
+.nav-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #61dafb;
+}
+
+.prediction-tool-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.form-container,
+.result-container {
+  background-color: #3a3f4a;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+}
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.input-group input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.prediction {
+  font-size: 24px;
+  font-weight: bold;
+}
+.safe {
+  color: #28a745;
+}
+.risk {
+  color: #dc3545;
+}
+.error {
+  color: #ffc107;
+}
+.progress-bar-container {
+  background-color: #555;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.progress-bar {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.filter-container {
+  padding: 10px 20px;
+  background-color: #3a3f4a;
+  margin: 0 20px 20px 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+.filter-container label {
+  margin-right: 10px;
+}
+.filter-container select {
+  padding: 5px;
+  border-radius: 5px;
+}
