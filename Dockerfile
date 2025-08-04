@@ -13,10 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Salin semua aset (data dan model)
 COPY ./backend/ .
 
-# Salin kode aplikasi
-COPY ./backend/main.py .
-COPY ./backend/gunicorn_conf.py . # Jika kamu menggunakan ini
-
 # Salin folder build dari frontend ke dalam folder statis
 COPY ./frontend/build ./static
 
