@@ -15,3 +15,5 @@ COPY ./backend/ .
 
 # Salin folder build dari frontend ke dalam folder statis di backend
 COPY ./frontend/build ./static
+
+CMD ["gunicorn", "-c", "gunicorn_conf.py", "main:app"]
